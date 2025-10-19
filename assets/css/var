@@ -1,0 +1,17 @@
+:root {
+    /*  Primary Colors  */
+    --clr-green-200: hsl(148, 38%, 91%);
+    --clr-green-600: hsl(169, 82%, 27%);
+    --clr-red: hsl(0, 66%, 54%);
+
+    /*  Neutral Colors  */
+    --clr-white: hsl(0, 0%, 100%);
+    --clr-grey-500: hsl(186, 15%, 59%);
+    --clr-grey-900: hsl(187, 24%, 22%);
+
+    /*  Typography */
+    --font-family-base: 'Karla', sans-serif;
+    --font-size-label: 16px;
+    --font-weight-regular: 400;
+    --font-weight-bold: 700;
+}
