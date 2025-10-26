@@ -142,12 +142,14 @@ textarea {
     height: 4.5rem;
     padding: 0 1rem;
     border-radius: 10px;
-    border: 1.5px solid var(--clr-green-600);
     transition: .3s ease all;
 }
 
-.form__input {
+.form__input,
+.form__text-area,
+.form__input-radio {
     outline: none;
+    border: 1.5px solid var(--clr-grey-900);
 }
 
 .form__group-input-radio {
@@ -157,8 +159,8 @@ textarea {
 }
 
 .group-input-radio {
-    border: 1.5px solid var(--clr-green-600);
     border-radius: 10px;
+    border: 1.5px solid var(--clr-grey-900);
     padding: 1.3rem 2rem;
     display: flex;
     justify-content: flex-start;
@@ -170,6 +172,11 @@ textarea {
     width: 2rem;
     height: 2rem;
     accent-color: var(--clr-green-600);
+}
+
+.group-input-radio:has(input[type="radio"]:checked) {
+  background-color: var(--clr-green-200);
+  border-color: var(--clr-green-600);
 }
 
 .form__label .form__label-radio {
@@ -207,7 +214,6 @@ textarea {
     width: 100%;
     padding: 1rem 1rem;
     border-radius: 10px;
-    border: 1.5px solid var(--clr-green-600);
 }
 
 .form__label-group {
@@ -242,6 +248,16 @@ textarea {
     background-color: var(--clr-green-900);
 }
 
+/* Error State */
+
+.form__group--incorrect .form__input,
+.form__group--incorrect .form__text-area {
+    border: 1.5px solid var(--clr-red);
+}
+
+.form__group--incorrect .form__input-error {
+    display: block;
+}
 
 
 
