@@ -10,13 +10,13 @@
 
 	<title>Frontend Mentor | Contact form</title>
 
+	<!-- Styles -->
 	<link rel="stylesheet" href="./assets/css/normalize.css">
 	<link rel="stylesheet" href="./assets/css/styles.css">
 
-	<!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-	<style>
+	<!-- Form validation -->
+	<script type="text/javascript" src="./assets/js/app.js" defer></script>
 
-	</style>
 </head>
 
 <body>
@@ -35,12 +35,14 @@
 					<label for="firstName" class="form__label">First Name <span class="label__symbol">*</span></label>
 
 					<div class="form__group-input">
-						<input type="text" class="form__input" name="firstName" id="firstName" required>
+						<input type="text" class="form__input form__input--validation" name="firstName" id="firstName"
+							required>
 					</div>
 
 					<p class="form__input-error">
-						This field is required.
+						Please enter a valid name. Only letters and spaces are allowed (max 40 characters).
 					</p>
+
 				</div>
 
 				<!--Group: Last Name -->
@@ -48,11 +50,12 @@
 					<label for="lastName" class="form__label">Last Name <span class="symbol">*</span></label>
 
 					<div class="form__group-input">
-						<input type="text" class="form__input" name="lastName" id="lastName" required>
+						<input type="text" class="form__input form__input--validation" name="lastName" id="lastName"
+							required>
 					</div>
 
 					<p class="form__input-error">
-						This field is required.
+						Please enter a valid name. Only letters and spaces are allowed (max 40 characters).
 					</p>
 				</div>
 
@@ -61,7 +64,8 @@
 					<label for="emailAddress" class="form__label">Email Address <span class="symbol">*</span></label>
 
 					<div class="form__group-input">
-						<input type="email" class="form__input" name="emailAddress" id="emailAddress" required>
+						<input type="email" class="form__input form__input--validation" name="emailAddress"
+							id="emailAddress" required>
 					</div>
 
 					<p class="form__input-error">
@@ -76,14 +80,14 @@
 					<div class="form__group-input form__group-input-radio radio-grid">
 
 						<div class="group-input-radio">
-							<input type="radio" class="form__input form__input-radio" id="generalEnquiry" name="query"
-								value="generalEnquiry" required>
+							<input type="radio" class="form__input--validation form__input-radio" id="generalEnquiry"
+								name="query" value="generalEnquiry" required>
 							<label class="form__label-radio" for="generalEnquiry">General Enquiry</label>
 						</div>
 
 						<div class="group-input-radio">
-							<input type="radio" class="form__input form__input-radio" id="supportRequest" name="query"
-								value="supportRequest" required>
+							<input type="radio" class="form__input--validation form__input-radio" id="supportRequest"
+								name="query" value="supportRequest" required>
 							<label class="form__label-radio" for="supportRequest">Support Request</label>
 						</div>
 
@@ -99,7 +103,8 @@
 					<label for="" class="form__label">Message <span class="symbol">*</span></label>
 
 					<div class="form__group-input">
-						<textarea class="form__text-area" name="message" id="message" rows="10"></textarea>
+						<textarea class="form__input--validation form__text-area" name="message" id="message"
+							rows="10"></textarea>
 					</div>
 
 					<p class="form__input-error">
@@ -111,9 +116,11 @@
 				<div class="form__group form__group--consent" id="group-consent">
 					<label class="form__label">
 						<div class="form__label-group">
-							<input class="form__checkbox" type="checkbox" name="consent" id="consent">
-							<span class="form__checkbox-label">I consent to being contacted by the team <span class="form__checkbox-symbol">*</span>
-									
+							<input class="form__checkbox form__input--validation" type="checkbox" name="consent"
+								id="consent">
+							<span class="form__checkbox-label">I consent to being contacted by the team <span
+									class="form__checkbox-symbol">*</span>
+
 							</span>
 						</div>
 
@@ -135,8 +142,8 @@
 		</div>
 
 		<div class="attribution">
-			Challenge by <a href="https://www.frontendmentor.io?ref=challenge">Frontend Mentor</a>.
-			Coded by <a href="https://www.linkedin.com/in/eduardosandoval02/">Eduardo Sandoval</a>.
+			Challenge by <a href="https://www.frontendmentor.io?ref=challenge">Frontend Mentor</a>
+			Coded by <a href="https://www.linkedin.com/in/eduardosandoval02/">Eduardo Sandoval</a>
 		</div>
 	</main>
 
@@ -144,7 +151,6 @@
   Message Sent!
   Thanks for completing the form. We'll be in touch soon!
   -->
-
 
 </body>
 
