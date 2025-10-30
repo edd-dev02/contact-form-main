@@ -14,19 +14,24 @@ const formInputs = {
     message: false
 }
 
-inputs.forEach( input => {
+const modal = document.querySelector(".modal");
+const btnClose = document.getElementById("btn-close");
+
+inputs.forEach(input => {
     input.addEventListener("keyup", validateInputs);
     input.addEventListener("blur", validateInputs);
 });
 
-function validateInputs (e) {
-    
+btnClose.addEventListener("click", closeModal);
+
+function validateInputs(e) {
+
     e.preventDefault();
 
-    switch(e.target.name) {
+    switch (e.target.name) {
 
-        case "firstName": 
-            validateInputs(regularExpressions.name, e.target, e.target.name);
+        case "firstName":
+            validateInput(regularExpressions.name, e.target, e.target.name);
             break;
 
         default:
@@ -35,11 +40,27 @@ function validateInputs (e) {
     }
 }
 
+function openModal() {
+    modal.showModal();
+}
+
+function closeModal() {
+    modal.classList.add("closing");
+
+    modal.addEventListener("animationend", () => {
+        modal.classList.remove("closing");
+        modal.close();
+    }, { once: true });
+}
+
 form.addEventListener("submit", validateForm);
 
-function validateForm (e) {
+function validateForm(e) {
     e.preventDefault();
 
+    openModal();
+
+    /*
     const consent = document.getElementById("consent");
 
     const { name, lastName, email, queryType, message } = formInputs;
@@ -51,4 +72,5 @@ function validateForm (e) {
         document.getElementById("");
 
     }
+    */
 }

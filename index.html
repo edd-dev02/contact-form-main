@@ -12,6 +12,9 @@
 
 	<!-- Styles -->
 	<link rel="stylesheet" href="./assets/css/normalize.css">
+	<!-- Google Material Icons -->
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
 	<link rel="stylesheet" href="./assets/css/styles.css">
 
 	<!-- Form validation -->
@@ -21,6 +24,24 @@
 
 <body>
 
+	<!-- Modal -->
+	<dialog class="modal">
+		<header class="modal__header">
+			<span class="material-icons modal__icon">check_circle</span>
+			<h2 class="modal__title">Message Sent!</h2>
+		</header>
+		<section class="modal__content">
+			<div class="property-info">
+				<p class="modal__description">Thanks for completing the form.</p>
+				<p class="modal__description">We'll be in touch soon!</p>
+
+			</div>
+
+			<button class="modal__button" id="btn-close">Got it</button>
+
+		</section>
+	</dialog>
+
 	<main>
 		<div class="container form-container">
 
@@ -28,7 +49,7 @@
 				<h1 class="header__title">Contact Us</h1>
 			</header>
 
-			<form class="form grid-form">
+			<form class="form grid-form" id="form">
 
 				<!--Group: First Name -->
 				<div class="form__group" id="group-firstName">
@@ -140,6 +161,9 @@
 
 
 		</div>
+
+
+
 
 		<div class="attribution">
 			Challenge by <a href="https://www.frontendmentor.io?ref=challenge">Frontend Mentor</a>
