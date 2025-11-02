@@ -14,7 +14,6 @@ const formInputs = {
     message: false
 };
 
-
 const modal = document.querySelector(".modal");
 const btnClose = document.getElementById("btn-close");
 
@@ -44,7 +43,7 @@ function validateInputs(e) {
             validateInput(regularExpressions.message, e.target, e.target.name);
             break;
         default:
-            console.log("Error, please try again");
+            alert("Error, please try again");
             break;
     }
 }
@@ -102,7 +101,6 @@ function validateForm(e) {
         openModal();
         form.reset();
 
-        // Reiniciar estado
         Object.keys(formInputs).forEach(key => formInputs[key] = false);
     } else {
         console.log("Validation error");

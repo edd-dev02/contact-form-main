@@ -19,6 +19,8 @@
     --font-weight-bold: 700;
 }
 
+/* Global styles */
+
 html {
     font-size: 62.5%;
     box-sizing: border-box;
@@ -111,7 +113,7 @@ textarea {
     resize: none;
 }
 
-/* --------------------------------------------------- */
+/* Form styles */
 
 .form-container {
     margin: 3rem auto;
@@ -301,7 +303,7 @@ textarea {
     }
 }
 
-/* 🔥 Animación de cierre */
+/* Modal animation */
 @keyframes modalFadeOut {
   0% {
     opacity: 1;
@@ -368,7 +370,6 @@ textarea {
 
 /* Responsive */
 
-
 @media (min-width: 768px) {
 
     .container {
@@ -403,17 +404,6 @@ textarea {
     }
 
 }
-
-
-
-
-
-
-
-
-
-
-
 
 .attribution {
     font-size: 1.5rem;
