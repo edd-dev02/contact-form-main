@@ -21,11 +21,6 @@ Users should be able to:
 |---------------|----------------|--------------|
 | ![Desktop preview](./assets/screenshots/desktop-view.jpeg) | ![Modal preview](./assets/screenshots/modal-success.jpeg) | ![Mobile preview](./assets/screenshots/mobile-view.jpeg) |
 
-> 💡 Tip: Guarda tus imágenes en una carpeta llamada `assets/screenshots` dentro del proyecto y nómbralas claramente.  
-> Ejemplo: `desktop-view.png`, `modal-success.png`, `mobile-view.png`.
-
-
-
 ### 🖼️ Live Preview
 - **Live site:** [eduardo-contact-form.netlify.app](https://eduardo-contact-form.netlify.app/)
 - **Solution repo:** [github.com/edd-dev02/contact-form-main](https://github.com/edd-dev02/contact-form-main)
