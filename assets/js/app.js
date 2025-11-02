@@ -43,7 +43,7 @@ function validateInputs(e) {
             validateInput(regularExpressions.message, e.target, e.target.name);
             break;
         default:
-            alert("Error, please try again");
+            console.log("Error, please try again");
             break;
     }
 }
