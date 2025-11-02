@@ -254,10 +254,11 @@ textarea {
 
 /* Error State */
 
-.form__group--incorrect .form__input,
-.form__group--incorrect .form__text-area {
+.form__group--incorrect > .form__group-input > .form__input,
+.form__group--incorrect > .form__group-input > .form__text-area {
     border: 1.5px solid var(--clr-red);
 }
+
 
 .form__group--incorrect .form__input-error {
     display: block;
@@ -348,10 +349,10 @@ textarea {
 
 .modal__button {
     height: 4.5rem;
-    font: 1.8rem;
+    font-size: 2rem;
     font-weight: var(--font-weight-bold);
     cursor: pointer;
-    padding: 0 5rem;
+    padding: 0 6rem;
     border-radius: 5px;
     background-color: var(--clr-green-600);
     color: var(--clr-white);

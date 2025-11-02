@@ -8,13 +8,13 @@
 
 	<link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
 
-	<title>Frontend Mentor | Contact form</title>
+	<title>Contact form | Eduardo Sandoval</title>
 
-	<!-- Styles -->
+	<!-- Normalize -->
 	<link rel="stylesheet" href="./assets/css/normalize.css">
 	<!-- Google Material Icons -->
 	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-
+	<!-- Styles -->
 	<link rel="stylesheet" href="./assets/css/styles.css">
 
 	<!-- Form validation -->
@@ -24,7 +24,7 @@
 
 <body>
 
-	<!-- Modal -->
+	<!-- Success Modal -->
 	<dialog class="modal">
 		<header class="modal__header">
 			<span class="material-icons modal__icon">check_circle</span>
@@ -76,19 +76,20 @@
 					</div>
 
 					<p class="form__input-error">
-						Please enter a valid name. Only letters and spaces are allowed (max 40 characters).
+						Please enter a valid last name. Only letters and spaces are allowed (max 40 characters).
 					</p>
 				</div>
 
 				<!--Group: E-mail -->
-				<div class="form__group form__group--email" id="group-email">
+				<div class="form__group form__group--email" id="group-emailAddress">
 					<label for="emailAddress" class="form__label">Email Address <span class="symbol">*</span></label>
 
 					<div class="form__group-input">
+						<!-- <input type="email" class="form__input" name="emailAddress" id="emailAddress" required> -->
 						<input type="email" class="form__input form__input--validation" name="emailAddress"
 							id="emailAddress" required>
-					</div>
 
+					</div>
 					<p class="form__input-error">
 						Please enter a valid email address.
 					</p>
@@ -102,13 +103,13 @@
 
 						<div class="group-input-radio">
 							<input type="radio" class="form__input--validation form__input-radio" id="generalEnquiry"
-								name="query" value="generalEnquiry" required>
+								name="query" value="generalEnquiry">
 							<label class="form__label-radio" for="generalEnquiry">General Enquiry</label>
 						</div>
 
 						<div class="group-input-radio">
 							<input type="radio" class="form__input--validation form__input-radio" id="supportRequest"
-								name="query" value="supportRequest" required>
+								name="query" value="supportRequest">
 							<label class="form__label-radio" for="supportRequest">Support Request</label>
 						</div>
 
@@ -125,12 +126,13 @@
 
 					<div class="form__group-input">
 						<textarea class="form__input--validation form__text-area" name="message" id="message"
-							rows="10"></textarea>
+							rows="10" required></textarea>
 					</div>
 
 					<p class="form__input-error">
-						This field is required.
+						Please enter a message between 10 and 500 characters.
 					</p>
+
 				</div>
 
 				<!-- Group: Consent -->
@@ -161,9 +163,6 @@
 
 
 		</div>
-
-
-
 
 		<div class="attribution">
 			Challenge by <a href="https://www.frontendmentor.io?ref=challenge">Frontend Mentor</a>
