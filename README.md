@@ -19,7 +19,7 @@ Users should be able to:
 
 | Desktop view | Success modal | Mobile view |
 |---------------|----------------|--------------|
-| ![Desktop preview](./assets/screenshots/desktop-view.jpeg) | ![Modal preview](./assets/screenshots/modal-success.jpeg) | ![Mobile preview](./assets/screenshots/mobile-view.jpge) |
+| ![Desktop preview](./assets/screenshots/desktop-view.jpeg) | ![Modal preview](./assets/screenshots/modal-success.jpeg) | ![Mobile preview](./assets/screenshots/mobile-view.jpeg) |
 
 > 💡 Tip: Guarda tus imágenes en una carpeta llamada `assets/screenshots` dentro del proyecto y nómbralas claramente.  
 > Ejemplo: `desktop-view.png`, `modal-success.png`, `mobile-view.png`.
